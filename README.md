@@ -74,15 +74,15 @@ To mitigate credit risk and protect business margins, it is crucial to integrate
 
 - Distribution of numerical features:
   
-  ![Feature Distribution](images/feature_distribution.png)
+  ![Feature Distribution](Distribution_of_AMT_CREDIT.png)
 
-- Boxplots to detect outliers:
+- Distribution of Categorical features:
   
-  ![Boxplot Example](images/boxplot_example.png)
+  ![Boxplot Example](Gender.png)
 
 - Correlation analysis with the target variable:
   
-  ![Correlation Heatmap](images/correlation_heatmap.png)
+  ![Correlation Heatmap](HeatMap.png)
 
 ---
 
@@ -121,21 +121,14 @@ To mitigate credit risk and protect business margins, it is crucial to integrate
 
 ## 📈 Model Evaluation Results
 
-- Confusion Matrix:
+- XGBOOST Results:
 
-  ![Confusion Matrix](images/confusion_matrix.png)
+  ![XGBOOST Results](Result.png)
 
-- ROC Curve:
-
-  ![ROC Curve](images/roc_curve.png)
-
-- Precision-Recall Curve:
-
-  ![Precision-Recall Curve](images/precision_recall_curve.png)
 
 - Top 20 Important Features:
 
-  ![Feature Importance](images/feature_importance.png)
+  ![Feature Importance](importance_Features.png)
 
 ---
 
@@ -144,7 +137,7 @@ To mitigate credit risk and protect business margins, it is crucial to integrate
 | Model            | Description                         | Accuracy (Approx.) |
 |------------------|-------------------------------------|--------------------|
 | Random Forest    | After Hyperparameter Tuning         | ~90%               |
-| XGBoost          | After SMOTE + Threshold Optimization| **~92%**            |
+| XGBoost          | After SMOTE + Threshold Optimization| **~96%**            |
 
 - XGBoost achieved **higher recall** and better Precision-Recall balance after threshold optimization.
 - Feature Importance analysis revealed top drivers influencing loan default risk.
